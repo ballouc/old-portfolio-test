@@ -1,0 +1,80 @@
+/* Reset styles to remove default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the list */
+ul.habits {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.habits li {
+  user-select: none;
+}
+.habits li.selected {
+  background-color: rgb(42, 187, 42);
+}
+
+.habits li input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the list items */
+li {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Style the checkbox inputs */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style the labels */
+label {
+  font-size: 18px;
+}
+
+/* Style the "Clear All" button */
+.clear-all {
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
